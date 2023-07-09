@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 /*-------------- GENERAL ----------------*/
 
@@ -7,7 +8,8 @@
     --txt-color: #FBDADA;
     --accent-color: #EF6564;
     --heading-color: #37357a;
-
+    --title-font: 'Josefin Sans',
+        sans-serif;
 }
 
 body {
@@ -16,11 +18,20 @@ body {
     background-color: var(--bgr-color);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     color: var(--txt-color);
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-size: 2em;
 }
 
 /*-------------- NAV ----------------*/
@@ -31,6 +42,7 @@ body {
     position: sticky;
     top: 0;
     background-color: #000022;
+    z-index: 2;
 }
 
 nav ul {
@@ -40,11 +52,16 @@ nav ul {
 
 nav ul li {
     padding: 10px;
+    padding-left: 20px; padding-right: 20px;
 }
 
 nav ul li a:hover {
     color: var(--accent-color);
     transition: 0.5s ease;
+}
+
+.dark-mode button {
+    margin: 10px;
 }
 
 
@@ -54,6 +71,8 @@ nav ul li a:hover {
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+    top: -40px;
 }
 
 .home-content {
@@ -63,28 +82,72 @@ nav ul li a:hover {
 
 #h1 {
     color: var(--heading-color);
+    font-size: 4em;
+}
+
+#h1-1 {
     font-size: 3em;
+}
+h1 {
+    font-family: var(--title-font);
 }
 
 /*-------------- ABOUT ----------------*/
 
 .about-container {
-    height: 100vh;
-    padding: 20px;
+    height:90vh;
+    padding: 100px; 
+    padding-bottom: 0; 
 }
 
 /*-------------- PROJECTS ----------------*/
 
 .projects-container {
-    height: 100vh;
-    padding: 20px;
+    height: 90vh;
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.projects-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: var(--heading-color);
+    width: 30%;
+    text-align: center;
+}
+
+.project-card a {
+    margin: 20px;
+    display: inline-block;
+}
+
+.project-card p {
+    margin: 20px;
+    display: inline-block;
+}
+
+.project-thumbnail {
+    width: 100%;
 }
 
 /*-------------- CONTACT ----------------*/
 
 .contact-container {
-    height: 100vh;
-    padding: 20px;
+    height: 90vh;
+    padding: 100px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact {
+    font-size: 3em;
+    text-align: center;
 }
 
 /*-------------- MEDIA QUERIES ----------------*/
