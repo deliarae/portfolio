@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/*-------------- GENERAL ----------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #030352;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    color: blanchedalmond;
+}
+
+/*-------------- NAV ----------------*/
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+
+/*-------------- BODY ----------------*/
+/*-------------- FOOTER ----------------*/
+
+/*-------------- MEDIA QUERIES ----------------*/
