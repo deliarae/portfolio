@@ -2,32 +2,89 @@
 
 /*-------------- GENERAL ----------------*/
 
+:root {
+    --bgr-color: #000022;
+    --txt-color: #FBDADA;
+    --accent-color: #EF6564;
+    --heading-color: #37357a;
+
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #030352;
+    background-color: var(--bgr-color);
 }
 
 * {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    color: blanchedalmond;
+    color: var(--txt-color);
 }
 
 /*-------------- NAV ----------------*/
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #000022;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: flex-end;
 }
 
 nav ul li {
     padding: 10px;
 }
 
+nav ul li a:hover {
+    color: var(--accent-color);
+    transition: 0.5s ease;
+}
 
-/*-------------- BODY ----------------*/
-/*-------------- FOOTER ----------------*/
+
+/*-------------- HOME ----------------*/
+
+.home-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#h1 {
+    color: var(--heading-color);
+    font-size: 3em;
+}
+
+/*-------------- ABOUT ----------------*/
+
+.about-container {
+    height: 100vh;
+    padding: 20px;
+}
+
+/*-------------- PROJECTS ----------------*/
+
+.projects-container {
+    height: 100vh;
+    padding: 20px;
+}
+
+/*-------------- CONTACT ----------------*/
+
+.contact-container {
+    height: 100vh;
+    padding: 20px;
+}
 
 /*-------------- MEDIA QUERIES ----------------*/
