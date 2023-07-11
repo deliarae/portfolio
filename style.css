@@ -4,10 +4,10 @@
 /*-------------- GENERAL ----------------*/
 
 :root {
-    --bgr-color: #000022;
-    --txt-color: #FBDADA;
+    --dark-blue: #000022;
+    --lightest-color: #e2e7f5;
     --accent-color: #EF6564;
-    --heading-color: #37357a;
+    --medium-blue: #37357a;
     --title-font: 'Josefin Sans',
         sans-serif;
 }
@@ -15,8 +15,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--bgr-color);
+    background-color: var(--dark-blue);
+    /* background: linear-gradient(-45deg, #000022, #020232, #0d0d37, #181849);
+    animation: animate 15s ease infinite; */
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -26,7 +29,7 @@ html {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    color: var(--txt-color);
+    color: var(--lightest-color);
 }
 
 h2 {
@@ -80,7 +83,7 @@ nav ul li a:hover {
 }
 
 #h1 {
-    color: var(--heading-color);
+    color: var(--medium-blue);
     font-size: 4em;
 }
 
@@ -123,7 +126,7 @@ h1 {
 }
 
 .project-card {
-    background-color: var(--heading-color);
+    background-color: var(--medium-blue);
     width: 30%;
     text-align: center;
 }
@@ -159,3 +162,41 @@ h1 {
 }
 
 /*-------------- MEDIA QUERIES ----------------*/
+
+/*-------------- DARK MODE ----------------*/
+.dark-mode * {
+    background-color: var(--lightest-color);
+    color: #37357a;
+}
+
+.dark-mode .project-card {
+    background-color: #37357a;
+}
+
+.dark-mode .project-card * {
+    background-color: #37357a;
+    color: #e2e7f5;
+}
+
+.dark-mode .icon g {
+    fill: var(--medium-blue);
+}
+
+.dark-mode .icon:hover g {
+    fill: var(--accent-color);
+}
+
+.dark-mode #h1 {
+    color: var(--accent-color);
+}
+
+.dark-mode .nav-container {
+    background-color: var(--medium-blue);
+}
+.dark-mode .class1 {
+    background-color: var(--medium-blue);
+}
+.dark-mode .class1 a {
+    background-color: var(--medium-blue);
+    color: var(--lightest-color);
+}
