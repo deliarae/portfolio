@@ -10,6 +10,14 @@
     --medium-blue: #37357a;
     --title-font: 'Josefin Sans',
         sans-serif;
+
+/* -----------COLOURS FOR LIGHT MODE------------ */
+    --switch-bg: #F5F5F6;
+    --switch-cirgle-bg: #FFD371;
+    --icon-sun: #997F44;
+    --icon-moon: #B1B0B5;
+    
+    --switch-circle-position: 0.1rem;
 }
 
 body {
@@ -36,6 +44,46 @@ h2 {
     font-family: var(--title-font);
     font-size: 2em;
 }
+
+
+/* ------------- DARK MODE SWITCHER ---------------- */
+/* -------SWITCHER--------- */
+#theme-switcher {
+    background-color: var(--switch-bg);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1.33rem;
+    cursor: pointer;
+    padding: 0.66rem;
+    position: relative;
+}
+
+#theme-switcher::before {
+    content: '';
+    position: absolute;
+    width: 2.22rem;
+    height: 2.22rem;
+    background-color: var(--switch-cirgle-bg);
+    border-radius: 50px;
+    z-index: 0;
+    left: 0;
+    transform: translateX(var(--switch-circle-position));
+}
+
+#theme-switcher svg {
+    z-index: 1;
+}
+
+#icon-sun {
+    fill: var(--icon-sun);
+}
+
+#icon-moon {
+    fill: var(--icon-moon);
+}
+
+
 
 /*-------------- NAV ----------------*/
 
