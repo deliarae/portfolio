@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delia Rauftlin</title>
+
+    <script>
+      let localS = localStorage.getItem("theme");
+
+      if (localS === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -148,6 +157,7 @@
 -50 301 51 153 78 266 161 398 293 249 247 411 572 460 919 15 108 15 354 0
 462 -99 697 -639 1257 -1315 1363 -123 19 -229 23 -360 15z"
               />
+              <desc>GitHub Icon</desc>
             </g>
           </svg>
         </div>

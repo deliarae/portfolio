@@ -12,14 +12,15 @@
     --title-color: #37357a;
     --title-font: 'Josefin Sans',
         sans-serif;
+    --nav-bg-color: #000022;
 
     --card-bg-color: #37357a;
     --project-text-color: #e2e7f5;
 
     --switch-bg: #37357a;
     --switch-cirgle-bg: #F5F5F6;
-    --icon-sun: #B1B0B5;
-    --icon-moon: #656567;
+    --icon-sun: #e2e7f5;
+    --icon-moon: #000022;
     
     --switch-circle-position: 2.6rem;
 }
@@ -33,13 +34,14 @@
     --title-color: #000022;
     --title-font: 'Josefin Sans',
         sans-serif;
+    --nav-bg-color: #000022;
 
     --card-bg-color: #37357a;
     --project-text-color: #e2e7f5;
 
     --switch-bg: #37357a;
     --switch-cirgle-bg: #F5F5F6;
-    --icon-sun: #997F44;
+    --icon-sun: #000022;
     --icon-moon: #e2e7f5;
 
     --switch-circle-position: 0.2rem;
@@ -180,7 +182,7 @@ h2 {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: var(--page-bg-color);
+    background-color: var(--nav-bg-color);
     z-index: 2;
 }
 
