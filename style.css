@@ -307,11 +307,22 @@ body:hover .icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #contact {
     font-size: 3em;
     text-align: center;
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+    
+}
+.contact-button a {
+    color: #000022;
 }
 
 /*-------------- MEDIA QUERIES ----------------*/
