@@ -55,58 +55,6 @@
 
 
 
-
-
-/*-------------- DARK MODE ----------------*/
-/* .dark-mode * {
-    background-color: var(--text-color);
-    color: #37357a;
-}
-
-.dark-mode .project-card {
-    background-color: #37357a;
-}
-
-.dark-mode .project-card * {
-    background-color: #37357a;
-    color: #e2e7f5;
-}
-
-.dark-mode .icon g {
-    fill: var(--title-color);
-}
-
-.dark-mode .icon:hover g {
-    fill: var(--accent-color);
-}
-
-.dark-mode #h1 {
-    color: var(--accent-color);
-}
-
-.dark-mode .nav-container {
-    background-color: var(--title-color);
-}
-
-.dark-mode .class1 {
-    background-color: var(--title-color);
-}
-
-.dark-mode .class1 a {
-    background-color: var(--title-color);
-    color: var(--text-color);
-} */
-
-
-
-
-
-
-
-
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -268,10 +216,29 @@ body:hover .icon {
             align-items: center;
 }
 
-.about-container svg {
-    fill: var(--icon-fill-color)
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+#selfie {
+    width: 28%;
+    height: fit-content;
+    padding-left: 50px;
+}
+
+/* .svg-container {
+    padding: 50px;
+} */
+.svg-container svg {
+    fill: var(--icon-fill-color)
+
+}
+.svg-container svg:hover {
+    fill: var(--icon-fill-color-hover);
+    transition: none;
+}
 
 /*-------------- PROJECTS ----------------*/
 
