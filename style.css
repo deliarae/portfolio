@@ -259,16 +259,25 @@ body:hover .icon {
 .about-container {
     height:90vh;
     padding: 100px; 
-    padding-bottom: 0; 
+    padding-bottom: 200; 
 }
-#icon-js {
-    fill:none;
+
+.about-sub-container {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+.about-container svg {
+    fill: var(--icon-fill-color)
 }
 
 
 /*-------------- PROJECTS ----------------*/
 
 .projects-container {
+    position: relative;
+    top: 100px;
     height: 90vh;
     padding: 100px;
     padding-bottom: 0;
