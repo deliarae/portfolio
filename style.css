@@ -82,6 +82,17 @@ h2 {
     font-size: 2em;
 }
 
+button {
+    /* margin-top: 50px; */
+    padding: 8px;
+    background-color: var(--page-bg-color);
+    border-color: var(--text-color);
+}
+
+.contact-button a {
+    color: var(--text-color);
+}
+
 
 /* ------------- DARK MODE SWITCHER ---------------- */
 #theme-switcher {
@@ -156,9 +167,7 @@ nav ul li a:hover {
     transition: 0.5s ease;
 }
 
-.dark-mode button {
-    margin: 10px;
-}
+
 
 /*-------------- HOME ----------------*/
 
@@ -186,6 +195,11 @@ nav ul li a:hover {
 h1 {
     font-family: var(--title-font);
 }
+#github-link {
+    width: 40px;
+    max-width: 40px;
+}
+
 .icon:hover {
   cursor: pointer;
   transform: scale(1.2);
@@ -201,6 +215,21 @@ body:hover .icon {
     transition: 0.5s ease;
 }
 
+.buttons-underneath-intro {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 160px;
+    padding-top: 20px;
+}
+
+.cv-button {
+    height: 80%;
+}
+
+.cv-button:hover {
+    cursor: pointer;
+}
 
 /*-------------- ABOUT ----------------*/
 
@@ -228,12 +257,15 @@ body:hover .icon {
     padding-left: 50px;
 }
 
-/* .svg-container {
-    padding: 50px;
-} */
-.svg-container svg {
-    fill: var(--icon-fill-color)
+.svg-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.svg-container svg {
+    fill: var(--icon-fill-color);
+    width: 80px;
+    height: 80px;
 }
 .svg-container svg:hover {
     fill: var(--icon-fill-color-hover);
@@ -297,13 +329,9 @@ body:hover .icon {
 
 .contact-button {
     text-align: center;
-    margin-top: 50px;
-    padding: 5px;
     
 }
-.contact-button a {
-    color: #000022;
-}
+
 
 /*-------------- MEDIA QUERIES ----------------*/
 
