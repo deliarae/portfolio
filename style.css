@@ -261,6 +261,10 @@ body:hover .icon {
     padding: 100px; 
     padding-bottom: 0; 
 }
+#icon-js {
+    fill:none;
+}
+
 
 /*-------------- PROJECTS ----------------*/
 
