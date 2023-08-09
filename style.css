@@ -53,17 +53,11 @@
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 }
 
-
-
 body {
     margin: 0;
     padding: 0;
     background-color: var(--page-bg-color);
-    /* background: linear-gradient(-45deg, #000022, #020232, #0d0d37, #181849);
-    animation: animate 15s ease infinite; */
-   
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -89,10 +83,19 @@ button {
     border-color: var(--text-color);
 }
 
-.contact-button a {
-    color: var(--text-color);
+button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    /* transform: scale(1.1); */
+    transition: 0.5s ease;
+    cursor: pointer;
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px var(--text-color);
 }
 
+button a {
+    color: var(--text-color);
+}
 
 /* ------------- DARK MODE SWITCHER ---------------- */
 #theme-switcher {
@@ -124,7 +127,6 @@ button {
 
 #theme-switcher svg {
     z-index: 1;
-    /* transition: var(--default-transition); */
 }
 
 #icon-sun {
@@ -134,8 +136,6 @@ button {
 #icon-moon {
     fill: var(--icon-moon);
 }
-
-
 
 /*-------------- NAV ----------------*/
 
@@ -166,8 +166,6 @@ nav ul li a:hover {
     color: var(--accent-color);
     transition: 0.5s ease;
 }
-
-
 
 /*-------------- HOME ----------------*/
 
@@ -211,38 +209,35 @@ h1 {
 .icon:hover g {
     fill: var(--icon-fill-color-hover);
 }
-body:hover .icon {
-    transition: 0.5s ease;
-}
 
 .buttons-underneath-intro {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 160px;
+    align-items: center;
+    width: 170px;
     padding-top: 20px;
+}
+.buttons-underneath-intro svg {
+    vertical-align: middle;
 }
 
 .cv-button {
     height: 80%;
 }
 
-.cv-button:hover {
-    cursor: pointer;
-}
-
 /*-------------- ABOUT ----------------*/
 
 .about-container {
-    height:90vh;
+    /* max-height: 500px; */
     padding: 100px; 
-    padding-bottom: 200; 
+    /* padding-bottom: 200;  */
 }
 
 .about-sub-container {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .introduction {
@@ -275,9 +270,9 @@ body:hover .icon {
 /*-------------- PROJECTS ----------------*/
 
 .projects-container {
-    position: relative;
-    top: 100px;
-    height: 90vh;
+    /* position: relative; */
+    /* top: 100px; */
+    /* height: 90vh; */
     padding: 100px;
     padding-bottom: 0;
 }
@@ -312,10 +307,10 @@ body:hover .icon {
 
 /*-------------- CONTACT ----------------*/
 
-.contact-container {
-    height: 90vh;
-    padding: 100px;
-    padding-bottom: 0;
+#contact-main-container {
+    height: 80vh;
+    padding: 90px;
+    /* margin-bottom: 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,9 +322,13 @@ body:hover .icon {
     text-align: center;
 }
 
+#contact-text-container{
+    width: 50%;
+    text-align: justify;
+}
+
 .contact-button {
     text-align: center;
-    
 }
 
 
