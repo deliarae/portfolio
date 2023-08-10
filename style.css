@@ -246,11 +246,8 @@ h1 {
 .introduction-photo {
     float: right;
     width: 30vw;
-    display: inline;
-   
 }
 #selfie {
-    display: inline;
     width: 100%;
 }
 
@@ -370,4 +367,9 @@ h1 {
     #contact-text-container {
         width: 100%;
     }
+    .introduction-photo{
+        float: none;
+        width: 100%;
+        }
+    
 }
