@@ -282,21 +282,24 @@ h1 {
 }
 
 .project-card {
-    background-color: var(--card-bg-color);
+    background-color: var(--page-bg-color);
     width: 30%;
     text-align: center;
+    border: 2px solid;
+    border-color: var(--card-bg-color);
+    box-shadow: 1px 1px 10px #37357a, -1px 1px 10px #37357a;
 }
 
 .project-card a {
     margin: 20px;
     display: inline-block;
-    color: var(--project-text-color);
+    color: var(--text-color);
 }
 
 .project-card p {
     margin: 20px;
     display: inline-block;
-    color: var(--project-text-color);
+    color: var(--text-color);
 }
 
 .project-thumbnail {
