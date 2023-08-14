@@ -29,7 +29,7 @@
 :root[data-theme="light"] {
     --page-bg-color: #e2e7f5;
     --text-color: #37357a;
-    --icon-fill-color: #000022;
+    --icon-fill-color: #37357a;
     --icon-fill-color-hover: #EF6564; 
     --accent-color: #EF6564;
     --title-color: #000022;
@@ -230,39 +230,56 @@ h1 {
 /*-------------- ABOUT ----------------*/
 
 .about-container {
-    /* max-height: 500px; */
-    padding: 100px; 
+    height: 90vh;
+    /* width: 70%; */
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* padding-bottom: 200;  */
 }
 
-
+.introduction {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
 .introduction-text {
     text-align: justify;
     display: inline;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 #introduction-text {
     display: inline;
 }
 .introduction-photo {
-    float: right;
-    width: 25vw;
-    padding-left: 10px;
+    /* float: right; */
+    width: 35%;
+    /* padding-left: 10px; */
 }
 #selfie {
     width: 100%;
+    border: 1px solid var(--text-color);
+    box-shadow: 1px 1px 30px #37357a, -1px 1px 10px #37357a;
 }
 
 .svg-container {
     display: flex;
+    justify-content: space-between;
+    width: 80%;
     /* justify-content: flex-end; */
 }
 
 .svg-container svg {
     fill: var(--icon-fill-color);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
+
 .svg-container svg:hover {
     fill: var(--icon-fill-color-hover);
     transition: none;
@@ -272,7 +289,7 @@ h1 {
 
 .projects-container {
     padding: 100px;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 .projects-sub {
@@ -308,8 +325,8 @@ h1 {
 
 /*-------------- CONTACT ----------------*/
 
-#contact-main-container {
-    height: 80vh;
+#contact {
+    height: 90vh;
     padding: 90px;
     display: flex;
     flex-direction: column;
@@ -317,7 +334,7 @@ h1 {
     align-items: center;
 }
 
-#contact {
+#contact-title {
     font-size: 3em;
     text-align: center;
 }
@@ -352,8 +369,18 @@ h1 {
 
     .about-container{
         padding: 20px;
+        justify-content: flex-end;
     }
-
+    .introduction {
+        flex-direction: column;
+    }
+    .introduction-text {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .svg-container {
+        width: 100%;
+    }
     .projects-container {
         padding: 20px;
     }
