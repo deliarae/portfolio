@@ -285,9 +285,9 @@ h1 {
     background-color: var(--page-bg-color);
     width: 30%;
     text-align: center;
-    border: 2px solid;
-    border-color: var(--card-bg-color);
-    box-shadow: 1px 1px 10px #37357a, -1px 1px 10px #37357a;
+    border: 1px solid;
+    border-color: var(--text-color);
+    box-shadow: 1px 1px 30px #37357a, -1px 1px 10px #37357a;
 }
 
 .project-card a {
@@ -324,7 +324,7 @@ h1 {
 
 #contact-text-container{
     width: 50%;
-    text-align: justify;
+    text-align: center;
 }
 
 .contact-button {
